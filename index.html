@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Game Market Intelligence Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .accordion-content.open {
+            max-height: 2000px; /* Adjust as needed */
+        }
+        .accordion-button.open svg.rotate-icon {
+            transform: rotate(90deg);
+        }
+        .accordion-button svg.rotate-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-white">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">Game Market Intelligence Platform</h1>
+            <p class="text-slate-400 mt-2 text-lg">An Interactive Project Plan for Data-Driven Decisions</p>
+        </header>
+
+        <main class="space-y-6" id="accordion-container">
+
+            <!-- Phase 1: Foundational Dashboard Development -->
+            <div class="bg-slate-800/50 rounded-2xl border border-slate-700 shadow-lg">
+                <button class="accordion-button w-full flex justify-between items-center text-left p-6" data-target="phase1-content">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-blue-500/10 p-3 rounded-lg border border-blue-400/30">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="M3 3v18h18"/><path d="M18.7 8a6 6 0 0 0-6-6"/><path d="M13 8a2 2 0 0 0-2-2"/><path d="M12 18v-4"/><path d="M8 18v-2"/><path d="M4 18v-6"/></svg>
+                        </div>
+                        <div>
+                            <h2 class="text-xl md:text-2xl font-bold text-slate-100">Phase 1: Foundational Dashboard Development</h2>
+                            <p class="text-slate-400">The "What": Creating a single source of truth for market performance.</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotate-icon text-slate-500"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+                <div id="phase1-content" class="accordion-content">
+                    <div class="p-8 pt-4 border-t border-slate-700/50">
+                        <h3 class="text-lg font-semibold text-teal-300 mb-4">Project Components:</h3>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>User Flow:</strong> Product/Marketing teams view Market Overview -> Drill down to Genre Deep Dive -> Track specific games in Competitor Watchlist.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>System Architecture:</strong> Sensor Tower API -> Data Warehouse (e.g., BigQuery) -> BI Tool (e.g., Looker, Tableau) for dashboard rendering.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>UX/UI Wireframing:</strong> Design high-fidelity, interactive mockups in Figma, focusing on data clarity and ease of navigation.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Solution Design:</strong> Define data models, chart types, and filter logic for each dashboard to answer key stakeholder questions.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Modularity:</strong> Each dashboard (Market, Genre, Competitor) is a self-contained module, allowing for independent development and updates.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Front-end Design:</strong> Implementation within the chosen BI tool, focusing on responsive design for desktop and tablet viewing.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Back-end Design:</strong> Create robust ETL pipelines to pull, clean, and aggregate Sensor Tower data into the warehouse efficiently.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Communication:</strong> API calls to Sensor Tower; BI tool connects to the data warehouse.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Deployment:</strong> Publish dashboards via the BI tool's platform, granting access to relevant teams.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Integration:</strong> Initial phase is a standalone system. Future integration could link dashboard insights to internal project management tools (e.g., Jira).</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Testing:</strong> UAT with Product/Marketing teams to validate data accuracy, usability, and functionality of filters.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Security:</strong> Role-based access control within the BI tool to ensure users only see relevant data.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Documentation:</strong> Create a guide for each dashboard explaining metrics, data sources, and how to use filters.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 2: Designing the Research Workflow -->
+            <div class="bg-slate-800/50 rounded-2xl border border-slate-700 shadow-lg">
+                <button class="accordion-button w-full flex justify-between items-center text-left p-6" data-target="phase2-content">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-blue-500/10 p-3 rounded-lg border border-blue-400/30">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="M2 9.5c0-3.52 3.52-4.5 7-4.5 2.14 0 4.14.76 5.5 2 1.36 1.24 2 3.06 2 5.5s-2.52 7.5-7.5 7.5c-4.48 0-7.5-3.52-7.5-7.5Z"/><path d="M15.5 9.5c0-3.52 3.52-4.5 7-4.5 2.14 0 4.14.76 5.5 2 1.36 1.24 2 3.06 2 5.5s-2.52 7.5-7.5 7.5c-.79 0-1.55-.11-2.27-.31"/></svg>
+                        </div>
+                        <div>
+                            <h2 class="text-xl md:text-2xl font-bold text-slate-100">Phase 2: Designing the Research Workflow</h2>
+                            <p class="text-slate-400">The "How": Standardizing the process from market signals to game insights.</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotate-icon text-slate-500"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+                <div id="phase2-content" class="accordion-content">
+                    <div class="p-8 pt-4 border-t border-slate-700/50">
+                        <h3 class="text-lg font-semibold text-teal-300 mb-4">Project Components:</h3>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>User Flow:</strong> Analyst follows a 4-level process: Macro (Market Pulse) -> Meso (Niche Analysis) -> Micro (Game Deconstruction) -> Synthesis (Opportunity Proposal).</div>
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>System Architecture:</strong> This is a process-based phase. The system architecture is the set of templates and documented procedures stored in Google Drive.</div>
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>UX/UI Wireframing:</strong> Design clear, professional templates in Google Docs/Slides for the "Game Deconstruction" and "Opportunity Synthesis" reports.</div>
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Solution Design:</strong> Create a detailed flowchart of the research process, defining inputs, outputs, and decision points at each level of the analysis funnel.</div>
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Modularity:</strong> The research templates are modular and can be used independently as needed.</div>
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Front-end Design:</strong> N/A (process-focused). The "front-end" is the readability and usability of the templates themselves.</div>
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Back-end Design:</strong> N/A (process-focused).</div>
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Communication:</strong> Standardized report templates ensure consistent communication of findings to leadership and other teams.</div>
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Deployment:</strong> Finalized templates and flowcharts are stored and versioned in the project's Google Drive folder for team access.</div>
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Integration:</strong> The workflow directly integrates with the dashboards from Phase 1, using them as the primary information source.</div>
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Testing:</strong> Conduct a trial run of the research workflow on a specific genre or market trend to refine the process and templates.</div>
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Security:</strong> Access to research reports and templates managed via Google Drive sharing permissions.</div>
+                           <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Documentation:</strong> The core deliverable is the documentation itself—the flowchart and a guide on how to complete each research template.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Phase 3: AI Integration for Advanced Insights -->
+            <div class="bg-slate-800/50 rounded-2xl border border-slate-700 shadow-lg">
+                 <button class="accordion-button w-full flex justify-between items-center text-left p-6" data-target="phase3-content">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-blue-500/10 p-3 rounded-lg border border-blue-400/30">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="M12 8V4H8"/><rect x="4" y="12" width="8" height="8" rx="2"/><path d="M8 12v-2a2 2 0 1 1 4 0v2"/><path d="m18.3 13.7-.9-1.4"/><path d="m20.9 10.3-.9 1.4"/><path d="M15 12v-2a2 2 0 0 0-4 0v2"/><path d="M12 12h10"/><path d="m4.2 12.3.9 1.4"/><path d="m1.6 15.7.9-1.4"/></svg>
+                        </div>
+                        <div>
+                            <h2 class="text-xl md:text-2xl font-bold text-slate-100">Phase 3: AI Integration for Advanced Insights</h2>
+                            <p class="text-slate-400">The "So What": Using AI to accelerate research and generate recommendations.</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotate-icon text-slate-500"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+                <div id="phase3-content" class="accordion-content">
+                   <div class="p-8 pt-4 border-t border-slate-700/50">
+                        <h3 class="text-lg font-semibold text-teal-300 mb-4">Project Components:</h3>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>User Flow:</strong> Analyst exports structured data (e.g., CSV) from a dashboard -> Inputs data into a tool that calls the Gemini API -> Receives a generated summary, analysis, or list of game ideas.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>System Architecture:</strong> Python script or a simple web app (using Flask/React) that takes structured data as input, formats it into a prompt, and sends it to the Gemini API.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>UX/UI Wireframing:</strong> Design a simple web interface with a file upload/paste area for data, a text box for custom prompts, and a display area for the AI-generated response.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Solution Design:</strong> Develop a library of sophisticated "prompts templates" for different tasks (e.g., weekly summary, competitor feature analysis, game concept brainstorming).</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Modularity:</strong> Create separate functions or scripts for each AI task (Summarizer, Analyzer, Ideator) to keep the code clean and maintainable.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Front-end Design:</strong> If a web app is built, use a simple framework like React or vanilla JS to create the user interface.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Back-end Design:</strong> A lightweight server (e.g., Flask in Python, Node.js) to handle API key management securely and make calls to the Gemini API.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Communication:</strong> Secure HTTPS requests from the back-end server to the Gemini API endpoint.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Deployment:</strong> Deploy the script/web app to a cloud service like Google Cloud Run for a scalable, serverless solution.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Integration:</strong> The AI tools are integrated into the research workflow (Phase 2) as an accelerator for the analysis and synthesis steps.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Testing:</strong> Rigorously test different prompts and data formats to evaluate the quality and reliability of the AI's output.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Security:</strong> Store the Gemini API key securely as an environment variable or using a secret manager, never in the code itself.</div>
+                            <div class="bg-slate-900/70 p-4 rounded-lg border border-slate-700"><strong>Documentation:</strong> Document the prompt library, explaining how to format data and use each prompt effectively to get the best results.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        
+        <footer class="text-center mt-16 text-slate-500 text-sm">
+            <p>Project Plan generated for Game Publishing Market Research.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetContent = document.getElementById(button.dataset.target);
+                    const isCurrentlyOpen = targetContent.classList.contains('open');
+
+                    // Close all accordion items first
+                    accordionButtons.forEach(btn => {
+                        const content = document.getElementById(btn.dataset.target);
+                        content.classList.remove('open');
+                        btn.classList.remove('open');
+                    });
+
+                    // If the clicked item was not already open, open it.
+                    if (!isCurrentlyOpen) {
+                        targetContent.classList.add('open');
+                        button.classList.add('open');
+                    }
+                });
+            });
+            
+            // Open the first phase by default
+            const firstButton = document.querySelector('.accordion-button');
+            if(firstButton) {
+                const firstContent = document.getElementById(firstButton.dataset.target);
+                firstButton.classList.add('open');
+                firstContent.classList.add('open');
+            }
+        });
+    </script>
+</body>
+</html>
+
